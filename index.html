@@ -1,0 +1,805 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Jana Garo</title>
+
+    <!-- Libraries  -->
+    <!-- bootstrap css cdn link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- bootstrap icon cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+
+    <!-- for adding animation to website we have use AOS library AOS Library css file cdn link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- jquery cdn link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- https://www.jqueryscript.net/time-clock/Dynamic-Animated-Timeline-Slider.html-->
+    <script src="js/plugins/timeline/jquery.roadmap.min.js"></script>
+    <link rel="stylesheet" href="js/plugins/timeline/jquery.roadmap.min.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav
+      id="navbar-top"
+      class="navbar navbar-expand-lg navbar-light sticky-top"
+      style="background-color: #36363d"
+    >
+      <div class="container-fluid px-5">
+        <a class="navbar-brand fw-bold fs-2" href="#" style="color: #b2a993">
+          Mein Portfolio
+        </a>
+        <button
+          class="nav-menu d-md-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <i class="bi bi-menu-button-fill"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-4 ms-auto" style="font-size: 1.1rem">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#about">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#career">Career</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#more">More</a>
+            </li>
+            <!-- Toggle Switch for Dark Mode -->
+            <li class="nav-item align-self-center">
+              <label class="switch">
+                <input type="checkbox" id="mode-toggle" />
+                <span class="slider round"></span>
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <script src="js/darkmode.js"></script>
+
+    <!-- ABOUT ME  -->
+    <section class="pt-5" id="about">
+      <div class="row justify-content-evenly align-middle">
+        <!-- here data-aos is used for adding aos animation  -->
+        <div
+          class="col-10 col-md-6 text-center text-md-start"
+          data-aos="slide-right"
+        >
+          <h1>Hallo! Ich bin</h1>
+          <h2>JANA GARO</h2>
+          <p class="text-muted">
+            Ich verbinde Struktur mit Kreativität, Strategie mit Design und
+            Technik mit Menschen. Als Wirtschaftsinformatikerin interessiere ich
+            mich für die Schnittstelle von digitalen Systemen, Prozessen und
+            Gestaltung. Ich analysiere, strukturiere und entwickle Lösungen, die
+            komplexe Zusammenhänge verständlich und nutzbar machen. Mich
+            fasziniert, wie aus klarer Struktur gute Konzepte entstehen.
+          </p>
+
+          <!-- Button: Random Facts über mich  -->
+          <button
+            class="c-btn h-btn mt-4 py-3 px-5 rounded-pill"
+            id="random-fact-btn"
+          >
+            Random Facts about me
+          </button>
+          <p
+            id="random-fact"
+            class="mt-3 text-muted"
+            style="font-style: italic"
+          ></p>
+
+          <!-- Button: Cornify "Add some Magic"  -->
+          <button
+            class="c-btn h-btn mt-4 py-3 px-5 rounded-pill"
+            onclick="
+              cornify_add();
+              return false;
+            "
+          >
+            Add some Magic 🦄
+          </button>
+
+          <script>
+            const facts = [
+              "Ich habe über 10 Pflanzen zuhause – aber muss diese regelmässig ersetzen, weil ich keinen Grünen Daumen habe",
+              "Nach einer Treppe bin ich komplett ausser Atem.",
+              "Ich bin ein bisschen ein Monk – Ordnung und Struktur machen mich glücklich.",
+              "Manchmal putze ich lieber, als das zu tun, was ich eigentlich erledigen sollte.",
+              "Ich hatte einmal ein Meerschweinchen namens Tweety.",
+              "Ich kann mich stundenlang mit Layouts, Farben und Designideen beschäftigen.",
+              "Ich Reise gerne und liebe es neue Orte zu entdecken.",
+              "Ich mag minimalistisches Design, auch wenn mein Kopf manchmal alles andere als minimalistisch ist.",
+              "Ich freue mich über kleine, gut durchdachte Details.",
+              "Gute Ideen kommen mir oft unter der Dusche oder beim Spazieren.",
+              "Ich mag es, wenn Dinge klar, logisch und schön gestaltet sind.",
+              "Mein Kopf ist oft eine Mischung aus Strategie, Kreativität und Chaos.",
+              "Ich liebe es, komplexe Dinge zu strukturieren und verständlich zu machen.",
+              "Ich bewege mich gerne zwischen Technologie, Design und Strategie.",
+              "Wenn ich ein System sehe, überlege ich automatisch: Wie könnte man das optimieren?",
+              "Matcha gehört zu meinem Alltag.",
+              "Ich bin ein kleines Konsumopfer.",
+              "Ich könnte problemlos jeden Tag eine Packung Chips essen.",
+              "Ich liebe fancy Food und neue Foodspots zu entdecken.",
+              "Ein Aperol Spritz ist für mich der perfekte Start in einen Sommerabend.",
+              "Wenn ich gerade nicht arbeite oder lerne, helfe ich gerne bei Umbauten mit meinen Hobby-Handwerkerfähigkeiten.",
+              "Wäsche zusammenlegen gehört definitiv nicht zu meinen Lieblingsaufgaben.",
+              "Ich liebe es, Mottopartys zu organisieren und kreative Ideen umzusetzen.",
+              "Science-Fiction fasziniert mich – von Filmen bis zu Zukunftsideen.",
+              "Unnötiges Allgemeinwissen bereichert mein Leben mehr, als es eigentlich sollte.",
+            ];
+
+            document
+              .getElementById("random-fact-btn")
+              .addEventListener("click", function () {
+                const randomIndex = Math.floor(Math.random() * facts.length);
+                document.getElementById("random-fact").textContent =
+                  facts[randomIndex];
+              });
+          </script>
+
+          <script
+            type="text/javascript"
+            src="https://www.cornify.com/js/cornify.js"
+          ></script>
+        </div>
+
+        <!-- Bewerbungsfoto Section -->
+        <div class="col-10 col-md-4 d-md-block">
+          <img src="Bilder/bewerbungsfoto.jpg" class="img-fluid" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- PERSONAL INFORMATION & CONTACT -->
+    <section class="contact py-5" id="contact">
+      <div class="heading text-center"></div>
+      <div class="row justify-content-evenly mt-5">
+        <!-- Personal Information -->
+        <div class="col-10 col-md-5" data-aos="slide-right">
+          <div class="mt-4">
+            <h3 class="mb-3">Persönliche Informationen</h3>
+            <p class="text-white mb-1">
+              <span style="font-weight: 600">Geburtsdatum:</span> 29.12.2001
+            </p>
+            <p class="text-white mb-1">
+              <span style="font-weight: 600">Heimatort:</span> Tschugg BE
+            </p>
+            <p class="text-white mb-1">
+              <span style="font-weight: 600">Nationalität:</span> Schweiz
+            </p>
+            <p class="text-white mb-1">
+              <span style="font-weight: 600">Familienstand:</span> Ledig
+            </p>
+            <p class="text-white mb-1">
+              <span style="font-weight: 600">Führerschein:</span> Kategorie B
+            </p>
+
+            <h3 class="mb-3 mt-4">Fremdsprachen</h3>
+            <p class="text-white mb-1">
+              <span style="font-weight: 600">Deutsch:</span> Muttersprache
+            </p>
+            <p class="text-white mb-1">
+              <span style="font-weight: 600">Englisch:</span> Niveau B2
+              (zertifiziert)
+            </p>
+            <p class="text-white mb-1">
+              <span style="font-weight: 600">Französisch:</span> Niveau B1
+              (zertifiziert)
+            </p>
+
+            <h3 class="mb-3 mt-4">Zertifikate</h3>
+            <p class="text-white mb-1">
+              ECDL Base Certificate<br />
+              ECDL Standard Certificate<br />
+              ECDL Advanced Presentation<br />
+              ECDL Advanced Word<br />
+              Certificate Intermediate (CEFR B1)<br />
+              Certificate de Stage Le Landeron
+            </p>
+          </div>
+        </div>
+
+        <!-- Contact Details -->
+        <div class="col-10 col-md-5 contact-details" data-aos="slide-left">
+          <h3 class="mb-3">Kontakte</h3>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-geo-alt-fill"></i>
+            </div>
+            <div class="col-11">
+              <p class="text-white mb-3">
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=Gärbi+2a,+3257+Grossaffoltern"
+                  target="_blank"
+                  style="text-decoration: none; color: inherit"
+                  >Gärbi 2a, 3257 Grossaffoltern
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-telephone-fill"></i>
+            </div>
+            <div class="col-11">
+              <p class="text-white mb-3">+41 79 955 89 01</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-send-fill"></i>
+            </div>
+            <div class="col-11">
+              <p class="text-white mb-3">
+                <a
+                  href="mailto:janamara.garo@gmail.com"
+                  style="text-decoration: none; color: inherit"
+                  >janamara.garo@gmail.com
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <!-- Unicorn Escape Game -->
+          <div class="text-center my-5">
+            <h5 class="text-white">Or play Unicorn Escape</h5>
+            <button class="c-btn unicorn-btn mt-3 py-3 px-5 rounded-pill">
+              <a
+                href="https://unicorn-escape.surge.sh/"
+                target="_blank"
+                style="text-decoration: none; color: #fff"
+              >
+                Unicorn Escape 🦄
+              </a>
+            </button>
+          </div>
+            <!-- Download Button  -->
+            <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+              <a
+                href="Lebenslauf.pdf"
+                download="SampleCV"
+                style="text-decoration: none; color: #fff"
+                >Download CV</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </section> 
+        </div>
+      </div>
+    </section>
+
+    <!-- Career Timeline-->
+    <section class="career" id="career">
+      <div class="heading text-center pt-5">
+        <img src="Bilder/Timeline Icon Beruf.PNG" alt="Timeline Icon Beruf" />
+        <h3>Career</h3>
+      </div>
+
+      <div class="portfolio-body">
+        <div id="career-timeline"></div>
+      </div>
+    </section>
+
+    <!-- Education Timeline-->
+    <section class="education" id="education">
+      <div class="heading text-center pt-5">
+        <img
+          src="Bilder/Timeline Icon Ausbildung.PNG"
+          alt="Timeline Icon Beruf"
+        />
+        <h3>Education</h3>
+      </div>
+
+      <div class="portfolio-body">
+        <div id="education-timeline"></div>
+      </div>
+    </section>
+
+    <!-- SKILLS 
+    <section class="skill py-5" id="skills">
+      <div class="row justify-content-evenly">
+        <div class="col-10 col-md-5 skill-with-progress" data-aos="slide-right">
+          <div class="row justify-content-evenly">
+            <div class="col-10 col-md-6">
+              <div class="progress-card ms-3 ms-md-0">
+                <div class="circular-progress html-css">
+                  <span class="progress-value html-progress">0%</span>
+                </div>
+                <br />
+                <span class="text">HTML & CSS</span>
+              </div>
+            </div>
+            <div class="col-10 col-md-6 mt-4 mt-md-0">
+              <div class="progress-card ms-3 ms-md-0">
+                <div class="circular-progress javascript">
+                  <span class="progress-value javascript-progress">0%</span>
+                </div>
+                <br />
+                <span class="text">JavaScript</span>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-evenly mt-4">
+            <div class="col-10 col-md-6">
+              <div class="progress-card ms-3 ms-md-0">
+                <div class="circular-progress python">
+                  <span class="progress-value python-progress">0%</span>
+                </div>
+                <br />
+                <span class="text">Python</span>
+              </div>
+            </div>
+            <div class="col-10 col-md-6 mt-4 mt-md-0">
+              <div class="progress-card ms-3 ms-md-0">
+                <div class="circular-progress rsql">
+                  <span class="progress-value rsql-progress">0%</span>
+                </div>
+                <br />
+                <span class="text">R & SQL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
+          <div class="heading mt-5 mt-md-3">
+            <h3>My Skills</h3>
+            <p class="text-muted">
+              Als angehende Wirtschaftsinformatikerin mit einem starken
+              Hintergrund in Verwaltungs- und IT-Aufgaben bringe ich
+              umfangreiche Kenntnisse in digitalen Verwaltungsprozessen mit.
+              Meine Erfahrung umfasst die Unterstützung bei IT-Projekten, wie
+              der Umstellung auf Business Applikationen, sowie die Betreuung von
+              Kundenanliegen. Erste Kenntnisse in HTML, JavaScript, CSS sowie
+              Python und R habe ich im Rahmen meines Studiums erworben und baue
+              sie weiter aus. Mit fundierter Erfahrung in Microsoft Office und
+              Abacus sowie zertifizierter IT-Expertise (ECDL) und
+              Sprachkenntnissen in Deutsch, Englisch und Französisch bin ich
+              bestens aufgestellt, um administrative und IT-technische
+              Herausforderungen zu meistern und digitale Transformationen aktiv
+              mitzugestalten.
+            </p> -->
+
+
+
+    <!-- ADDITIONAL SKILLS SECTION -->
+    <section class="skill py-5" id="skills">
+      <div class="row justify-content-evenly">
+      <div class="col-10 col-md-5" data-aos="slide-right">
+        <div class="skill-category-card">
+        <h4 class="mb-4">Digitale & Technische Kenntnisse</h4>
+        <ul class="skill-list">
+          <li>HTML · CSS</li>
+          <li>SQL · TypeScript</li>
+          <li>Grundlagen Python · Grundlagen R</li>
+          <li>APIs</li>
+          <li>Datenanalyse · Datenmanagement</li>
+          <li>Softwareentwicklung</li>
+          <li>Web Engineering</li>
+          <li>Grundlagen Künstliche Intelligenz</li>
+        </ul>
+        </div>
+      </div>
+
+      <div class="col-10 col-md-5" data-aos="slide-left">
+        <div class="skill-category-card">
+        <h4 class="mb-4">Tools & Software</h4>
+        <ul class="skill-list">
+          <li>Figma · Canva</li>
+          <li>Adobe Tools</li>
+          <li>Visual Studio Code</li>
+          <li>SharePoint</li>
+          <li>Abacus · Volta</li>
+          <li>CMI Axioma</li>
+          <li>Innosolv</li>
+          <li>ERP-Systeme</li>
+          <li>StarUML</li>
+        </ul>
+        </div>
+      </div>
+      </div>
+
+      <div class="row justify-content-evenly mt-4">
+      <div class="col-10 col-md-5" data-aos="slide-right">
+        <div class="skill-category-card">
+        <h4 class="mb-4">Methoden</h4>
+        <ul class="skill-list">
+          <li>Business Information Systems</li>
+          <li>Requirements Engineering</li>
+          <li>Prozessmanagement</li>
+          <li>Design Thinking</li>
+          <li>UI Design · UX Thinking</li>
+          <li>Wireframes · Mockups</li>
+          <li>Content Strategie</li>
+          <li>Branding</li>
+          <li>Nachhaltige Unternehmensstrategien</li>
+          <li>Scrum · HERMES</li>
+          <li>Agiles Projektmanagement</li>
+          <li>Klassisches Projektmanagement</li>
+          <li>Hybrides Projektmanagement</li>
+        </ul>
+        </div>
+      </div>
+
+      <div class="col-10 col-md-5" data-aos="slide-left">
+        <div class="skill-category-card">
+        <h4 class="mb-4">Softskills</h4>
+        <ul class="skill-list">
+          <li>Analytisches Denken</li>
+          <li>Strukturierte Arbeitsweise</li>
+          <li>Problemlösungskompetenz</li>
+          <li>Kommunikationsfähigkeit</li>
+          <li>Teamarbeit</li>
+          <li>Kreativität</li>
+          <li>Strategisches Denken</li>
+          <li>Lernbereitschaft</li>
+          <li>Eigeninitiative</li>
+        </ul>
+        </div>
+      </div>
+      </div>
+    </section>
+
+
+    <!-- Contact Form
+        <div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
+          <div class="contact-form">
+            <form
+              action="mailto:janamara.garo@gmail.com"
+              method="POST"
+              enctype="text/plain"
+            >
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  name="name"
+                  placeholder="Name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput2"
+                  name="email"
+                  placeholder="E-mail"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleFormControlInput3"
+                  name="phone"
+                  placeholder="Mobile No."
+                />
+              </div>
+              <div class="mb-3">
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea4"
+                  name="message"
+                  placeholder="Message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="c-btn h-btn mt-3 py-3 px-5 rounded-pill"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>  -->
+
+    <!-- PROJECTS -->
+    <section class="projects py-5" id="projects">
+      <div class="heading text-center">
+        <h3>My Projects</h3>
+      </div>
+      <div class="row justify-content-evenly mt-5">
+        <div class="col-10 col-md-3 d-flex flex-column" data-aos="slide-up">
+          <div class="project-card flex-grow-1 d-flex flex-column">
+            <img
+              src="Bilder/Volunthero.png"
+              class="img-fluid mb-3"
+              alt="Projekt 1"
+            />
+            <h3>Volunthero - Where People Become Heroes</h3>
+            <p class="text-muted small mb-3">
+              Volunthero ist ein Konzept für eine digitale Plattform, die
+              Menschen mit freiwilligen Projekten verbindet. Die App ermöglicht
+              es Organisationen oder Privatpersonen, Projekte zu erstellen und
+              freiwillige Helferinnen und Helfer zu finden, während
+              Interessierte schnell passende Engagement-Möglichkeiten entdecken
+              können.
+            </p>
+            <button class="c-btn h-btn py-2 px-4 rounded-pill mt-auto">
+              <a
+                href="#"
+                target="_blank"
+                style="text-decoration: none; color: #fff"
+              >
+                View on Figma
+              </a>
+            </button>
+          </div>
+        </div>
+        <div
+          class="col-10 col-md-3 d-flex flex-column mt-4 mt-md-0"
+          data-aos="slide-up"
+        >
+          <div class="project-card flex-grow-1 d-flex flex-column">
+            <img
+              src="Bilder/NestFinder.png"
+              class="img-fluid mb-3"
+              alt="Projekt 2"
+            />
+            <h3>NestFinder - wo Daten auf Lebensqualität treffen</h3>
+            <p class="text-muted small mb-3">
+              NestFinder ist ein Konzept für eine mobile App, die Menschen dabei
+              unterstützt, den idealen Wohnort basierend auf individuellen
+              Lebensqualitätsfaktoren zu finden. Anstatt nur klassische
+              Kriterien wie Preis oder Wohnungsgrösse zu berücksichtigen,
+              integriert die App auch Aspekte wie Infrastruktur, Umwelt,
+              Mobilität oder Nähe zu wichtigen Einrichtungen.
+            </p>
+            <button class="c-btn h-btn py-2 px-4 rounded-pill mt-auto">
+              <a
+                href="#"
+                target="_blank"
+                style="text-decoration: none; color: #fff"
+              >
+                View on Figma
+              </a>
+            </button>
+          </div>
+        </div>
+        <div
+          class="col-10 col-md-3 d-flex flex-column mt-4 mt-md-0"
+          data-aos="slide-up"
+        >
+          <div class="project-card flex-grow-1 d-flex flex-column">
+            <img
+              src="Bilder/Bernee.png"
+              class="img-fluid mb-3"
+              alt="Projekt 3"
+            />
+            <h3>Biodiversity Days Bern – Nature meets the City</h3>
+            <p class="text-muted small mb-3">
+              Für die Biodiversity Days Bern entwickelten wir ein Konzept für
+              eine informative und visuell ansprechende Event-Website. Ziel war
+              es, das Thema Biodiversität sowie Veranstaltungen rund um Natur
+              und Nachhaltigkeit in Bern verständlich und attraktiv
+              darzustellen. Das Projekt umfasst ein Website-Design, das
+              Informationen zu Events, Hintergrundwissen und Aktivitäten
+              übersichtlich präsentiert und Besucherinnen und Besucher zur
+              Teilnahme motiviert.
+            </p>
+            <button class="c-btn h-btn py-2 px-4 rounded-pill mt-auto">
+              <a
+                href="#"
+                target="_blank"
+                style="text-decoration: none; color: #fff"
+              >
+                View on Figma
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ab hier werden einige APIs eingebunden -->
+    <section id="more" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">
+          Some API Experiments – Just Because I Could
+        </h2>
+        <p class="text-center text-muted">
+          Hier sind ein paar kleine API-Integrationen. Nicht unbedingt
+          lebensverändernd, aber technisch spannend – und vor allem der Beweis,
+          dass ich es geschafft habe, externe Daten in meine Website einzubauen.
+        </p>
+        <!-- Standortinformationen -->
+        <p id="location-info" class="text-center text-muted">
+          Standort wird ermittelt...
+        </p>
+      </div>
+    </section>
+
+    <!-- Lokale Nachrichten Sektion 
+    <section id="location-news-section" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Lokale Nachrichten</h2>
+        <p class="text-center text-muted">
+          Hier findest du die neuesten Nachrichten aus deiner Region:
+        </p> -->
+
+        <!-- Fallback-Nachricht (wird standardmäßig ausgeblendet) -->
+        <div
+          id="no-news-message"
+          style="
+            display: none;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #b2a993;
+            font-weight: 100;
+          "
+        >
+          Tut mir leid, aktuell haben wir keine Nachrichten in deiner Region.
+          <br />
+          Aber hier ist ein Fun Fact:
+        </div>
+
+        <!-- Nachrichtenliste -->
+        <ul id="news-list" class="list-unstyled mt-4"></ul>
+      </div>
+    </section>
+
+    <!-- Einbindung der geolocationNEWS.js -->
+    <script src="js/geolocationNEWS.js"></script>
+
+    <!-- Wetteranzeige -->
+    <section id="weather-section" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Lokale Wetterangaben</h2>
+        <p class="text-center text-muted">
+          Hier findest du die aktuellen Wetterdaten in deiner Region:
+        </p>
+        <div id="weather-info" class="text-center text-muted">
+          Wetterdaten werden geladen...
+        </div>
+        <!-- Fallback-Nachricht -->
+        <p
+          id="no-weather-message"
+          style="
+            display: none;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #b2a993;
+            font-weight: 100;
+            font-size: 20px;
+          "
+        >
+          Tut mir leid, aktuell konnten keine Wetterdaten in deiner Region
+          gefunden werden.
+          <br />
+          Aber hier ist ein Katzenbild:
+        </p>
+      </div>
+      <!-- Katzenbild Platzhalter -->
+      <div id="cat-images" class="text-center"></div>
+    </section>
+
+    <!-- Einbindung der geolocationWeather.js -->
+    <script src="js/geolocationWeather.js"></script>
+
+    <!-- Spotify Playlist basierend auf Standort
+     Dieser Abschnitt wird nicht angezeigt, da dieser noch keine genaueren Informationen liefert
+    <section id="spotify-section" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Lokale Spotify Playlist</h2>
+        <div id="spotify-playlist" class="text-center text-muted">
+          Playlist wird geladen...
+        </div>
+      </div>
+    </section>
+
+    Einbindung der geolocationSpotify.js 
+    <script src="js/geolocationSpotify.js"></script> -->
+
+    <!-- back to top button -->
+    <button
+      type="button"
+      class="btn btn-floating btn-lg rounded-pill"
+      id="btn-back-to-top"
+    >
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- FOOTER  -->
+    <footer class="text-center text-muted py-4">
+      <h3 class="text-white pt-4" data-aos="fade-up">Portfolio</h3>
+      <div class="link-group mt-5" data-aos="fade-up">
+        <a href="#about">About Me</a>
+        <div class="vr"></div>
+        <a href="#skills">Skills</a>
+        <div class="vr"></div>
+        <a href="#career">Career</a>
+        <div class="vr"></div>
+        <a href="#education">Education</a>
+        <div class="vr"></div>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="social-links mt-5" data-aos="fade-up">
+        <button class="rounded-pill linkedin">
+          <a
+            href="https://www.linkedin.com/in/janagaro/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="text-decoration: none; color: inherit"
+          >
+            <i class="bi bi-linkedin"></i>
+          </a>
+        </button>
+
+        <button class="rounded-pill github">
+          <a
+            href="https://github.com/JanaGaro?tab=repositories"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="text-decoration: none; color: inherit"
+          >
+            <i class="bi bi-github"></i>
+          </a>
+        </button>
+      </div>
+      <hr class="text-muted my-4" />
+
+      <p>Copyright 2024 | Portfolio Jana Garo | All Rights Reserved</p>
+    </footer>
+
+    <!-- bootstrap javascript cdn link  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS library javascript link  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      // initializing AOS library
+      AOS.init({
+        duration: 1000,
+        offset: 50,
+      });
+    </script>
+    <!-- custom js file linking -->
+    <script src="js/script.js"></script>
+    <script src="js/timeline.js"></script>
+  </body>
+</html>

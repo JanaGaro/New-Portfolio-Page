@@ -1,0 +1,526 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+@media (max-width: 768px) {
+  #about .img-fluid {
+    max-width: 200px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+@media (max-width: 576px) {
+  #about .img-fluid {
+    max-width: 150px;
+  }
+}
+
+html {
+  overflow-x: hidden; /* Verhindert horizontales Scrollen */
+  overflow-y: auto; /* Ermöglicht vertikales Scrollen */
+}
+
+/* appling google font over the website  */
+body {
+  font-family: "Inter", sans-serif;
+}
+/* styling menu icon */
+.nav-menu {
+  border: none;
+  font-size: 1.5rem;
+}
+/* styling navbar links  */
+.navbar-nav a {
+  color: #b2a993;
+  position: relative;
+}
+.navbar-nav a:hover {
+  color: #fcfcfc;
+}
+
+/* Toggle Switch Styling */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 19px;
+  width: 19px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #b2a993;
+}
+
+input:checked + .slider:before {
+  transform: translateX(24px);
+}
+
+/* styling about section starts */
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#about .row {
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+#about h1 {
+  font-size: 50px;
+  color: #b2a993;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+#about h2 {
+  font-size: 80px;
+  color: #b2a993;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+/* adding animation to home section image  */
+.img-fluid {
+  animation: floatimg 4s ease-in-out infinite;
+}
+
+@keyframes floatimg {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-24px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#about .img-fluid {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 0; /* Vermeidet zusätzlichen Abstand direkt unter dem Bild */
+}
+
+/* styling personalinfo section starts */
+#personalinfo {
+  background-color: #36363d;
+  border: 0;
+}
+
+#personalinfo h3 {
+  color: #b2a993;
+  font-weight: 700;
+}
+
+#personalinfo p {
+  color: #fff;
+}
+
+#personalinfo p {
+  margin-bottom: 30px;
+}
+
+/* skill section starts */
+#skills {
+  background-color: #36363d;
+  border: 0;
+}
+
+.skill h3 {
+  color: #b2a993;
+}
+
+.skill p {
+  margin-bottom: 30px;
+}
+
+/* Progress Card Styling */
+.progress-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.progress-card:hover {
+  transform: scale(1.05);
+}
+
+/* Circular Progress Bar Styling */
+.circular-progress {
+  position: relative;
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  background: conic-gradient(#ededed 0deg, #ededed 360deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.circular-progress::before {
+  content: "";
+  position: absolute;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.progress-value {
+  position: absolute;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #b2a993;
+}
+
+.html-progress {
+  color: #b2a993;
+}
+.javascript-progress {
+  color: #b2a993;
+}
+.python-progress {
+  color: #b2a993;
+}
+.rsql-progress {
+  color: #b2a993;
+}
+.text {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.heading p {
+  font-size: 1.3rem;
+}
+
+/* career */
+.career {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#career h3 {
+  color: #b2a993;
+  font-size: 40px;
+  font-weight: semi-bold;
+}
+
+/* education */
+.education {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.education h3 {
+  color: #b2a993;
+  font-size: 40px;
+  font-weight: semi-bold;
+}
+
+/* contact section starts */
+.contact {
+  background-color: #36363d;
+}
+
+.contact h3 {
+  font-size: 2rem;
+  color: #b2a993;
+}
+
+.contact p {
+  font-size: 1.2rem;
+  color: #fff;
+}
+.contact-details i {
+  font-size: 1.5rem;
+  color: #b2a993;
+}
+.contact-details p {
+  font-size: 1.2rem;
+  margin-left: 1rem;
+}
+
+/* styling contact btn  */
+.c-btn {
+  border: none;
+  background: #b2a993;
+  color: #fff;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.c-btn:hover {
+  transform: scale(1.05);
+}
+
+.contact-form .form-control:focus {
+  box-shadow: none;
+  border: 1px solid #b2a993;
+}
+.contact-form .form-control {
+  padding: 10px 10px;
+  width: 80%;
+}
+
+#more h2 {
+  color: #b2a993;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+/* Lokale Nachrichten Sektion */
+#location-news-section {
+  background-color: #ffffff;
+  padding: 40px 20px;
+  margin-top: 30px;
+}
+
+#location-news-section h2 {
+  font-size: 1.5rem;
+  color: #b2a993;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+#location-info {
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Nachrichtenliste */
+#news-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+  justify-content: center;
+  list-style: none;
+}
+
+/* Nachrichten-Kacheln */
+#news-list li {
+  background-color: #b2a993;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin: 0 auto;
+}
+
+#news-list li:hover {
+  transform: scale(1.05);
+}
+
+/* Nachrichtentext */
+#news-list li a {
+  text-decoration: none; /* Entfernt Unterstreichung der Links */
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: block;
+}
+
+/* Text „Tut mir leid...“ */
+#no-news-message {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #b2a993;
+  font-weight: bold;
+}
+
+#weather-section h2 {
+  font-size: 1.5rem;
+  color: #b2a993;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+/* Styling für Katzenbilder */
+.cat-image {
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#spotify-section h2 {
+  font-size: 1.5rem;
+  color: #b2a993;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* footer section */
+footer {
+  background-color: #36363d;
+}
+
+footer .link-group a {
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: #b2a993;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+footer .link-group a:hover {
+  color: #ffffff;
+}
+.social-links button {
+  border: none;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  background-color: #fff;
+  padding: 14px 15px 10px 15px;
+}
+.social-links .linkedin {
+  color: #b2a993;
+}
+.social-links button:hover {
+  color: #fff;
+  transform: translateY(-20px);
+  transition-duration: 1s;
+}
+.social-links .linkedin:hover {
+  background-color: #b2a993;
+}
+.social-links .github {
+  color: #b2a993;
+}
+.social-links .github:hover {
+  background-color: #b2a993;
+}
+
+/* styling back to top button */
+#btn-back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  display: none;
+  font-size: 1.4rem;
+  background-color: #b2a993;
+  color: #fff;
+  animation: pulse 3s infinite;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #36363d;
+  color: #b2a993;
+}
+
+body.dark-mode .navbar {
+  background-color: #fff;
+  color: #b2a993;
+}
+
+body.dark-mode .c-btn {
+  background-color: #36363d;
+  color: #b2a993;
+}
+
+body.dark-mode #skills {
+  background-color: #fff;
+}
+
+body.dark-mode .progress-card {
+  background-color: #36363d;
+  color: #b2a993;
+}
+
+body.dark-mode .contact {
+  background-color: #f3f3f3;
+}
+
+body.dark-mode #news-list li {
+  background-color: #36363d;
+  color: #b2a993;
+}
+
+body.dark-mode #location-news-section {
+  background-color: #36363d;
+}
+
+body.dark-mode footer {
+  background-color: #fff;
+}
+
+body.dark-mode footer .h3 {
+  color: #b2a993;
+}
+
+body.dark-mode footer .link-group a {
+  color: #b2a993;
+}
+
+body.dark-mode footer .link-group a:hover {
+  color: #fff;
+}
+
+body.dark-mode #btn-back-to-top {
+  background-color: #36363d;
+  color: #b2a993;
+}
+
+body.dark-mode .social-links button {
+  background-color: #36363d;
+  color: #b2a993;
+}
+
+body.dark-mode .social-links button:hover {
+  background-color: #b2a993;
+  color: #1a1a1a;
+}
