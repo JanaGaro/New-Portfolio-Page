@@ -1,0 +1,28 @@
+.Maze-grid {
+  display: grid;
+  gap: 0;
+}
+
+.Grid-cell {
+  height: 2em;
+}
+
+.small-cell .Grid-cell {
+  height: 1.5em;
+}
+
+.Grid-cell.border-east {
+  border-right: 2px solid black;
+}
+
+.Grid-cell.border-west {
+  border-left: 2px solid black;
+}
+
+.Grid-cell.border-north {
+  border-top: 2px solid black;
+}
+
+.Grid-cell.border-south {
+  border-bottom: 2px solid black;
+}

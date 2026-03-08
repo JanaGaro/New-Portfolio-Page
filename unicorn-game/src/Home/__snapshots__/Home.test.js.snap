@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="p-5 h-screen "
+  >
+    <h1
+      class="font-black text-pink-600 text-4xl py-5 sm:py-10"
+    >
+      Hi. I am a Unicorn. 
+    </h1>
+    <div
+      class="flex flex-col font-mono justify-evenly h-5/6"
+    >
+      <div
+        class="react-floater-animated"
+      >
+        <img
+          alt="floating unicorn"
+          class="w-5/12 sm:w-3/12"
+          src="Unicorn.png"
+        />
+      </div>
+      <p>
+        No, I'm not a privately held startup company valued at over $1 billion.
+      </p>
+      <p>
+        I'm the real deal, a mystical creature of magic as well as Scotland's 
+        <a
+          class="underline"
+          href="https://www.visitscotland.com/about/uniquely-scottish/national-animal-unicorn/"
+        >
+           national animal
+        </a>
+        .
+      </p>
+      <p>
+        I'm being hunted by a Monster. Can I 
+        <span
+          class="text-pink-600 font-semibold"
+        >
+          TRUST
+        </span>
+         you to 
+        <span
+          class="text-pink-600 font-semibold"
+        >
+          PILOT
+        </span>
+         me safely to the rainbow?
+      </p>
+      <a
+        href="/game"
+      >
+        <button
+          class="gradient-pink border-2 border-purple-600 text-white px-3 py-3 shadow-xl rounded mr-auto"
+        >
+          Yes! Let's go!
+        </button>
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;

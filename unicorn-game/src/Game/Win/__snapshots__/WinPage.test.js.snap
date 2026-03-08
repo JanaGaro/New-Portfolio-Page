@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="flex flex-col justify-evenly items-center p-10 h-screen"
+  >
+    <div
+      class="font-mono text-xl text-center"
+    >
+      You reached the rainbow!
+    </div>
+    <div
+      class="react-floater-animated"
+    >
+      <img
+        alt="happy unicorn puking rainbow"
+        class="mx-auto sm:w-9/12 md:w-6/12 lg:w-4/12"
+        src="WinGame.png"
+      />
+    </div>
+    <button
+      class="shadow-xl py-2 px-3 border-2 border-purple-700 rounded gradient-pink text-white font-mono"
+    >
+      Restart
+    </button>
+  </div>
+</DocumentFragment>
+`;

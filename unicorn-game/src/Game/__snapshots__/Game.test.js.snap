@@ -1,0 +1,166 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="h-full"
+  >
+    <div
+      class="h-screen"
+    >
+      <h1
+        class="font-mono text-4xl text-center py-10 text-pink-600 font-black"
+      >
+        Game Setup
+      </h1>
+      <div
+        class="bg-clouds py-5 md:p-20 border-2 rounded md:px-10 grid grid-cols-8 gap-4 items-center"
+      >
+        <div
+          class="col-start-2 col-span-6 md:col-start-2 md:col-span-3"
+        >
+          <div
+            class="grid grid-cols-2 gap-4 items-center py-5"
+          >
+            <p
+              class="font-mono text-sm md:text-base"
+            >
+              Help the 
+              <span
+                class="text-pink-600"
+              >
+                Unicorn
+              </span>
+               navigate the maze towards the Rainbow.
+            </p>
+            <img
+              alt="maze"
+              class="w-10/12"
+              src="Maze.png"
+            />
+          </div>
+          <div
+            class="grid grid-cols-2 gap-4 items-center py-5"
+          >
+            <div
+              class="react-floater-animated"
+            >
+              <img
+                alt="small floating unicorn"
+                class="w-7/12"
+                src="smallUnicorn.png"
+              />
+            </div>
+            <p
+              class="font-mono text-sm md:text-base md:text-white"
+            >
+              Beware of the Skull Monster! 💀
+            </p>
+          </div>
+        </div>
+        <div
+          class="col-start-2 col-span-6 md:col-start-5 md:col-span-3 mx-auto"
+        >
+          <form
+            class="gradient-orchid font-mono flex flex-col border-2 border-black rounded p-5"
+          >
+            <h3
+              class="font-mono text-pink-600 py-5"
+            >
+              Game Settings
+            </h3>
+            <div
+              class="flex items-center justify-between mb-2"
+            >
+              <label
+                class="text-xs mr-5"
+                for="name"
+              >
+                Name
+              </label>
+              <select
+                class="px-3 py-2 rounded-xl bg-pink-50"
+                id="name"
+                name="name"
+              >
+                <option
+                  value="Pinkie Pie"
+                >
+                  Pinkie Pie
+                </option>
+                <option
+                  value="Twilight Sparkle"
+                >
+                  Twilight Sparkle
+                </option>
+                <option
+                  value="Fluttershy"
+                >
+                  Fluttershy
+                </option>
+                <option
+                  value="Applejack"
+                >
+                  Applejack
+                </option>
+                <option
+                  value="Rainbow Dash"
+                >
+                  Rainbow Dash
+                </option>
+                <option
+                  value="Rarity"
+                >
+                  Rarity
+                </option>
+              </select>
+            </div>
+            <div
+              class="flex items-center justify-between mb-2"
+            >
+              <label
+                class="justify-self-start text-xs"
+                for="difficulty"
+              >
+                Difficulty
+              </label>
+              <input
+                id="difficulty"
+                max="10"
+                min="0"
+                name="difficulty"
+                type="range"
+                value="0"
+              />
+            </div>
+            <div
+              class="flex items-center justify-between mb-2"
+            >
+              <label
+                class="justify-self-start text-xs"
+                for="size"
+              >
+                Maze Size
+              </label>
+              <input
+                class="self-end"
+                id="size"
+                max="25"
+                min="15"
+                name="size"
+                type="range"
+                value="15"
+              />
+            </div>
+            <button
+              class="mx-auto gradient-pink px-3 py-2 text-white font-mono rounded shadow-xl border-2 border-purple-600"
+            >
+              Start Game! 
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
