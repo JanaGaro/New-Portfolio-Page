@@ -86,12 +86,12 @@ input:checked + .slider:before {
 /* styling about section starts */
 #about {
   display: flex;
-  align-items: cent30050er;
+  align-items: center;
   justify-content: center;
 }
 
 #about .row {
-  margin-top: 40px;
+  margin-top: 50px;
   margin-bottom: 0;
 }
 
