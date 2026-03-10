@@ -86,12 +86,12 @@ input:checked + .slider:before {
 /* styling about section starts */
 #about {
   display: flex;
-  align-items: center;
+  align-items: cent30050er;
   justify-content: center;
 }
 
 #about .row {
-  margin-top: 50px;
+  margin-top: 40px;
   margin-bottom: 0;
 }
 
@@ -311,6 +311,42 @@ input:checked + .slider:before {
   color: #b2a993;
   font-size: 2rem;
   margin-top: 1rem;
+}
+
+/* Projects Sektion */
+#projects {
+  background-color: #ffffff;
+  padding: 40px 20px;
+}
+
+#projects h2 {
+  font-size: 2rem;
+  color: #b2a993;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+#projects h3 {
+  min-height: 60px;
+  display: flex;
+  align-items: flex-start;
+}
+
+#project-card {
+  height: 100%;
+}
+
+#project-img-wrapper {
+  height: 320px;
+  display: flex;
+  align-items: flex-end;
+}
+
+#projects img {
+  width: 100%;
+  height: 320px;
+  object-fit: contain;
+  display: block;
 }
 
 /* Lokale Nachrichten Sektion */
