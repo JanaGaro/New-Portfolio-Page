@@ -190,36 +190,36 @@
         <div class="col-10 col-md-5" data-aos="slide-right">
           <div class="mt-4">
             <h3 class="mb-3">Persönliche Informationen</h3>
-            <p class="text-white mb-1">
+            <p class="mb-1">
               <span>Geburtsdatum:</span> 29.12.2001
             </p>
-            <p class="text-white mb-1">
+            <p class="mb-1">
               <span>Heimatort:</span> Tschugg BE
             </p>
-            <p class="text-white mb-1">
+            <p class="mb-1">
               <span>Nationalität:</span> Schweiz
             </p>
-            <p class="text-white mb-1">
+            <p class="mb-1">
               <span>Familienstand:</span> Ledig
             </p>
-            <p class="text-white mb-1">
+            <p class="mb-1">
               <span>Führerschein:</span> Kategorie B
             </p>
 
             <h3 class="mb-3 mt-4">Fremdsprachen</h3>
-            <p class="text-white mb-1">
+            <p class="mb-1">
               <span>Deutsch:</span> Muttersprache
             </p>
-            <p class="text-white mb-1">
+            <p class="mb-1">
               <span>Englisch:</span> Niveau B2 (zertifiziert)
             </p>
-            <p class="text-white mb-1">
+            <p class="mb-1">
               <span>Französisch:</span> Niveau B1
               (zertifiziert)
             </p>
 
             <h3 class="mb-3 mt-4">Zertifikate</h3>
-            <p class="text-white mb-1">
+            <p class="mb-1">
               ECDL Base Certificate<br />
               ECDL Standard Certificate<br />
               ECDL Advanced Presentation<br />
@@ -238,7 +238,7 @@
               <i class="bi bi-geo-alt-fill"></i>
             </div>
             <div class="col-11">
-              <p class="text-white mb-3">
+              <p class="mb-3">
                 <a
                   href="https://www.google.com/maps/search/?api=1&query=Gärbi+2a,+3257+Grossaffoltern"
                   target="_blank"
@@ -253,7 +253,7 @@
               <i class="bi bi-telephone-fill"></i>
             </div>
             <div class="col-11">
-              <p class="text-white mb-3">+41 79 955 89 01</p>
+              <p class="mb-3">+41 79 955 89 01</p>
             </div>
           </div>
           <div class="row justify-content-evenly">
@@ -261,7 +261,7 @@
               <i class="bi bi-send-fill"></i>
             </div>
             <div class="col-11">
-              <p class="text-white mb-3">
+              <p class="mb-3">
                 <a
                   href="mailto:janamara.garo@gmail.com"
                   style="text-decoration: none; color: inherit"
@@ -271,19 +271,6 @@
             </div>
           </div>
 
-          <!-- Unicorn Escape Game -->
-          <div class="text-center my-5">
-            <h5 class="text-white">Or play Unicorn Escape</h5>
-            <button class="c-btn unicorn-btn mt-3 py-3 px-5 rounded-pill">
-              <a
-                href="https://unicorn-escape.surge.sh/"
-                target="_blank"
-                style="text-decoration: none; color: #fff"
-              >
-                Unicorn Escape 🦄
-              </a>
-            </button>
-          </div>
             <!-- Download Button  -->
             <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
               <a
@@ -539,10 +526,11 @@
 <!-- PROJECTS -->
 <section class="projects py-5" id="projects">
   <div class="heading text-center">
-    <h2>My Projects</h2>
+    <h2>Some Figma Projects</h2>
   </div>
 
   <div class="row justify-content-evenly align-items-stretch mt-5">
+    <!-- Volunthero Project -->
     <div class="col-10 col-md-3 d-flex" data-aos="slide-up">
       <div class="project-card d-flex flex-column h-100 w-100">
         <div class="project-img-wrapper mb-3">
@@ -554,25 +542,21 @@
         </div>
         <h3>Volunthero - Where People Become Heroes</h3>
         <p class="text-muted small mb-3">
-          Volunthero ist ein Konzept für eine digitale Plattform, die
-          Menschen mit freiwilligen Projekten verbindet. Die App ermöglicht
-          es Organisationen oder Privatpersonen, Projekte zu erstellen und
-          freiwillige Helferinnen und Helfer zu finden, während
-          Interessierte schnell passende Engagement-Möglichkeiten entdecken
-          können.
+          Volunthero ist ein Plattformkonzept, das Menschen mit freiwilligen Projekten verbindet 
+          und Organisationen dabei unterstützt, schnell passende Helfer zu finden.
         </p>
-        <button class="c-btn h-btn py-2 px-4 rounded-pill mt-auto">
-          <a
-            href="#"
-            target="_blank"
-            style="text-decoration: none; color: #fff"
-          >
-            View on Figma
-          </a>
-        </button>
+        <div class="d-flex gap-2 mt-auto">
+          <button class="c-btn h-btn py-2 px-4 rounded-pill flex-grow-1" onclick="openProjectModal('volunthero')">
+            View Details
+          </button>
+          <button class="c-btn h-btn py-2 px-4 rounded-pill">
+            <a href="#" target="_blank" style="text-decoration: none; color: #fff;">Figma</a>
+          </button>
+        </div>
       </div>
     </div>
 
+    <!-- NestFinder Project -->
     <div class="col-10 col-md-3 d-flex mt-4 mt-md-0" data-aos="slide-up">
       <div class="project-card d-flex flex-column h-100 w-100">
         <div class="project-img-wrapper mb-3">
@@ -584,25 +568,21 @@
         </div>
         <h3>NestFinder - wo Daten auf Lebensqualität treffen</h3>
         <p class="text-muted small mb-3">
-          NestFinder ist ein Konzept für eine mobile App, die Menschen dabei
-          unterstützt, den idealen Wohnort basierend auf individuellen
-          Lebensqualitätsfaktoren zu finden. Anstatt nur klassische
-          Kriterien wie Preis oder Wohnungsgrösse zu berücksichtigen,
-          integriert die App auch Aspekte wie Infrastruktur, Umwelt,
-          Mobilität oder Nähe zu wichtigen Einrichtungen.
+          NestFinder ist ein App-Konzept, das Menschen dabei unterstützt, den idealen Wohnort basierend 
+          auf Lebensqualitätsfaktoren wie Infrastruktur, Umwelt und Mobilität zu finden.
         </p>
-        <button class="c-btn h-btn py-2 px-4 rounded-pill mt-auto">
-          <a
-            href="#"
-            target="_blank"
-            style="text-decoration: none; color: #fff"
-          >
-            View on Figma
-          </a>
-        </button>
+        <div class="d-flex gap-2 mt-auto">
+          <button class="c-btn h-btn py-2 px-4 rounded-pill flex-grow-1" onclick="openProjectModal('nestfinder')">
+            View Details
+          </button>
+          <button class="c-btn h-btn py-2 px-4 rounded-pill">
+            <a href="#" target="_blank" style="text-decoration: none; color: #fff;">Figma</a>
+          </button>
+        </div>
       </div>
     </div>
 
+    <!-- Bernee Project -->
     <div class="col-10 col-md-3 d-flex mt-4 mt-md-0" data-aos="slide-up">
       <div class="project-card d-flex flex-column h-100 w-100">
         <div class="project-img-wrapper mb-3">
@@ -614,73 +594,156 @@
         </div>
         <h3>Biodiversity Days Bern – Nature meets the City</h3>
         <p class="text-muted small mb-3">
-          Für die Biodiversity Days Bern entwickelten wir ein Konzept für
-          eine informative und visuell ansprechende Event-Website. Ziel war
-          es, das Thema Biodiversität sowie Veranstaltungen rund um Natur
-          und Nachhaltigkeit in Bern verständlich und attraktiv
-          darzustellen. Das Projekt umfasst ein Website-Design, das
-          Informationen zu Events, Hintergrundwissen und Aktivitäten
-          übersichtlich präsentiert und Besucherinnen und Besucher zur
-          Teilnahme motiviert.
+          Biodiversity Days Bern ist ein Website-Konzept, das Veranstaltungen und Informationen 
+          rund um Biodiversität, Natur und Nachhaltigkeit verständlich und ansprechend präsentiert.
         </p>
-        <button class="c-btn h-btn py-2 px-4 rounded-pill mt-auto">
-          <a
-            href="#"
-            target="_blank"
-            style="text-decoration: none; color: #fff"
-          >
-            View on Figma
-          </a>
-        </button>
+        <div class="d-flex gap-2 mt-auto">
+          <button class="c-btn h-btn py-2 px-4 rounded-pill flex-grow-1" onclick="openProjectModal('bernee')">
+            View Details
+          </button>
+          <button class="c-btn h-btn py-2 px-4 rounded-pill">
+            <a href="#" target="_blank" style="text-decoration: none; color: #fff;">Figma</a>
+          </button>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- Project Detail Modals -->
+<div id="projectModal" class="modal fade" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="projectTitle"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body" id="projectContent"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const projectData = {
+    volunthero: {
+      title: "Volunthero - Where People Become Heroes",
+      idea: "Plattformkonzept für Freiwilligenprojekte.",
+      problem: [
+        "Freiwilligenarbeit schwer auffindbar",
+        "Organisationen finden schwer Helfer"
+      ],
+      concept: "Matching von Projekten und Volunteers | Einfache Projektübersicht",
+      process: "Bilder/Volunthero.png",
+      prototype: "#"
+    },
+    nestfinder: {
+      title: "NestFinder - wo Daten auf Lebensqualität treffen",
+      idea: "App-Konzept zur Findung des idealen Wohnorts.",
+      problem: [
+        "Wohnortwahl basiert auf unvollständigen Informationen",
+        "Schwer, alle Lebensqualitätsfaktoren zu vergleichen"
+      ],
+      concept: "Datenbasierte Wohnortempfehlungen | Infrastruktur-, Umwelt- und Mobilitätsanalyse",
+      process: "Bilder/NestFinder.png",
+      prototype: "#"
+    },
+    bernee: {
+      title: "Biodiversity Days Bern – Nature meets the City",
+      idea: "Website-Konzept für Biodiversitätsveranstaltungen.",
+      problem: [
+        "Biodiversitätsinformationen nicht zentral verfügbar",
+        "Veranstaltungen schwer zu entdecken"
+      ],
+      concept: "Zentrale Event- und Informationsplattform | Engagement für Nachhaltigkeit fördern",
+      process: "Bilder/Bernee.png",
+      prototype: "#"
+    }
+  };
+
+  function openProjectModal(projectId) {
+    const project = projectData[projectId];
+    const modal = new bootstrap.Modal(document.getElementById('projectModal'));
+    
+    document.getElementById('projectTitle').textContent = project.title;
+    
+    const content = `
+      <div class="project-details">
+        <h6 class="mt-4 mb-3"><strong>1. Idea</strong></h6>
+        <p class="text-muted">${project.idea}</p>
+
+        <h6 class="mt-4 mb-3"><strong>2. Problem</strong></h6>
+        <p class="text-muted">Warum braucht es das?</p>
+        <ul class="text-muted">
+          ${project.problem.map(p => `<li>${p}</li>`).join('')}
+        </ul>
+
+        <h6 class="mt-4 mb-3"><strong>3. Concept</strong></h6>
+        <p class="text-muted">${project.concept}</p>
+
+        <h6 class="mt-4 mb-3"><strong>4. Process</strong></h6>
+        <p class="text-muted">Persona, Wireframes & erste Skizzen:</p>
+        <img src="${project.process}" class="img-fluid rounded mb-3" alt="Process" style="max-height: 300px;">
+
+        <h6 class="mt-4 mb-3"><strong>5. Final Design</strong></h6>
+        <p class="text-muted">Figma Mockup & App Screens:</p>
+        <img src="${project.process}" class="img-fluid rounded mb-3" alt="Final Design" style="max-height: 300px;">
+
+        <h6 class="mt-4 mb-3"><strong>6. Prototype</strong></h6>
+        <a href="${project.prototype}" target="_blank" class="c-btn h-btn py-2 px-4 rounded-pill" style="text-decoration: none; color: #fff;">
+          View Prototype in Figma
+        </a>
+      </div>
+    `;
+    
+    document.getElementById('projectContent').innerHTML = content;
+    modal.show();
+  }
+</script>
+
     <!-- Ab hier werden einige APIs eingebunden -->
-    <section id="more" class="py-5">
+    <section id="more" class="py-3">
       <div class="container">
-        <h2 class="text-center mb-4">
-          Some API Experiments – Just Because I Could
-        </h2>
-        <p class="text-center text-muted">
-          Hier sind ein paar kleine API-Integrationen. Nicht unbedingt
-          lebensverändernd, aber technisch spannend und vor allem der Beweis,
-          dass ich es geschafft habe, externe Daten in meine Website einzubauen.
-        </p>
-        <!-- Standortinformationen -->
-        <p id="location-info" class="text-center text-muted">
-          Standort wird ermittelt...
-        </p>
+      <h2 class="text-center mb-4">
+        Some API Experiments – Just Because I Could
+      </h2>
+      <p class="text-center text-muted">
+        Hier sind ein paar kleine API-Integrationen. Nicht unbedingt
+        lebensverändernd, aber technisch spannend und vor allem der Beweis,
+        dass ich es geschafft habe, externe Daten in meine Website einzubauen.
+      </p>
+      <!-- Standortinformationen -->
+      <p id="location-info" class="text-center text-muted">
+        Standort wird ermittelt...
+      </p>
       </div>
     </section>
 
     <!-- Lokale Nachrichten Sektion 
     <section id="location-news-section" class="py-5">
       <div class="container">
-        <h2 class="text-center mb-4">Lokale Nachrichten</h2>
-        <p class="text-center text-muted">
-          Hier findest du die neuesten Nachrichten aus deiner Region:
-        </p> -->
+      <h2 class="text-center mb-4">Lokale Nachrichten</h2>
+      <p class="text-center text-muted">
+        Hier findest du die neuesten Nachrichten aus deiner Region:
+      </p> -->
 
-        <!-- Fallback-Nachricht (wird standardmäßig ausgeblendet) -->
-        <div
-          id="no-news-message"
-          style="
-            display: none;
-            text-align: center;
-            margin-bottom: 20px;
-            color: #b2a993;
-            font-weight: 100;
-          "
-        >
-          Tut mir leid, aktuell haben wir keine Nachrichten in deiner Region.
-          <br />
-          Aber hier ist ein Fun Fact:
-        </div>
+      <!-- Fallback-Nachricht (wird standardmäßig ausgeblendet) -->
+      <div
+        id="no-news-message"
+        style="
+        display: none;
+        text-align: center;
+        margin-bottom: 20px;
+        color: #b2a993;
+        font-weight: 100;
+        "
+      >
+        Tut mir leid, aktuell haben wir keine Nachrichten in deiner Region.
+        <br />
+        Aber hier ist ein Fun Fact:
+      </div>
 
-        <!-- Nachrichtenliste -->
-        <ul id="news-list" class="list-unstyled mt-4"></ul>
+      <!-- Nachrichtenliste -->
+      <ul id="news-list" class="list-unstyled mt-4"></ul>
       </div>
     </section>
 
@@ -688,36 +751,53 @@
     <script src="js/geolocationNEWS.js"></script>
 
     <!-- Wetteranzeige -->
-    <section id="weather-section" class="py-5">
+    <section id="weather-section" class="py-2">
       <div class="container">
-        <h2 class="text-center mb-4">Lokale Wetterangaben</h2>
-        <p class="text-center text-muted">
-          Hier findest du die aktuellen Wetterdaten in deiner Region:
-        </p>
-        <div id="weather-info" class="text-center text-muted">
-          Wetterdaten werden geladen...
-        </div>
-        <!-- Fallback-Nachricht -->
-        <p
-          id="no-weather-message"
-          style="
-            display: none;
-            text-align: center;
-            margin-bottom: 20px;
-            color: #b2a993;
-            font-weight: 100;
-            font-size: 20px;
-          "
-        >
-          Tut mir leid, aktuell konnten keine Wetterdaten in deiner Region
-          gefunden werden.
-          <br />
-          Aber hier ist ein Katzenbild:
-        </p>
+      <h2 class="text-center mb-4">Lokale Wetterangaben</h2>
+      <p class="text-center text-muted">
+        Hier findest du die aktuellen Wetterdaten in deiner Region:
+      </p>
+      <div id="weather-info" class="text-center text-muted">
+        Wetterdaten werden geladen...
+      </div>
+      <!-- Fallback-Nachricht -->
+      <p
+        id="no-weather-message"
+        style="
+        display: none;
+        text-align: center;
+        margin-bottom: 20px;
+        color: #b2a993;
+        font-weight: 100;
+        font-size: 20px;
+        "
+      >
+        Tut mir leid, aktuell konnten keine Wetterdaten in deiner Region
+        gefunden werden.
+        <br />
+        Aber hier ist ein Katzenbild:
+      </p>
       </div>
       <!-- Katzenbild Platzhalter -->
       <div id="cat-images" class="text-center"></div>
     </section>
+
+    <!-- Unicorn Escape Game -->
+    <section class="py-5" id="game">
+      <div class="text-center">
+      <p>Or play Unicorn Escape</p>
+      <button class="c-btn unicorn-btn mt-2 py-3 px-5 rounded-pill">
+        <a
+        href="https://unicorn-escape.surge.sh/"
+        target="_blank"
+        style="text-decoration: none; color: #fff"
+        >
+        Unicorn Escape 🦄
+        </a>
+      </button>
+      </div>
+    </section>
+
 
     <!-- Einbindung der geolocationWeather.js -->
     <script src="js/geolocationWeather.js"></script>
