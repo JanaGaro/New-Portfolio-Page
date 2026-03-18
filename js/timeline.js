@@ -31,7 +31,7 @@ var careerEvents = [
     date: "August 2023 - Heute",
     content: "Customer Service Mitarbeiterin ERP, BKW Building Solutions AG",
     details:
-      "Fokus auf Support, Prozessoptimierung und Digitalisierung von Geschäftsprozessen sowie Verantwortung für interne & externe Kommunikation sowie Mitarbeit in PMO-/Prozessmanagement-Themen.",
+      "Customer Service Mitarbeiterin ERP im Digital Business Solutions Center mit Fokus auf Support (1st & 2nd Level) für ERP-Systeme sowie die Digitalisierung und Optimierung von Geschäftsprozessen. Neben der Bearbeitung von Supportanfragen arbeite ich aktiv an der Weiterentwicklung von Prozessen und bringe mich in PMO- und Prozessmanagement-Themen ein, unter anderem durch die Durchführung von Workshops. Zusätzlich bin ich für die interne Kommunikation verantwortlich und betreue das Intranet, um einen klaren Informationsfluss sicherzustellen. Bei Themen rund um visuelle Darstellung und UI/UX bin ich oft erste Ansprechperson und unterstütze bei der verständlichen und strukturierten Aufbereitung von Inhalten.",
   },
 ];
 
