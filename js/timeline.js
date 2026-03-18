@@ -39,29 +39,24 @@ var educationEvents = [
   {
     date: "2008 - 2014",
     content: "Primarschule, Gampelen",
-    details: "Grundschulbildung und Basiswissen.",
   },
   {
     date: "2014 - 2017",
     content: "Oberstufenzentrum, Ins",
-    details: "Sekundarstufe mit schulischer Vertiefung.",
   },
   {
     date: "2017 - 2020",
-    content: "BWT Berufs- und Weiterbildungszentrum, Lyss",
-    details:
-      "Berufsschule während der kaufmännischen Ausbildung mit Fokus auf Wirtschaft und Sprachen.",
+    content: "Kauffrau EFZ am BWZ Berufs- und Weiterbildungszentrum, Lyss",
   },
   {
     date: "2020 - 2022",
-    content: "BWD Bildungszentrum für Wirtschaft und Dienstleistung, Bern",
-    details: "Weiterbildung mit wirtschaftlichem Schwerpunkt.",
+    content:
+      "Berufsmaturität am BWD Bildungszentrum für Wirtschaft und Dienstleistung, Bern",
   },
   {
-    date: "2022 - Heute",
-    content: "Berner Fachhochschule, Bern",
-    details:
-      "Studium der Wirtschaftsinformatik mit Fokus auf Systeme, Prozesse und IT.",
+    date: "2022 - 2026",
+    content:
+      "BSc Wirtschaftsinformatik / Digital Business & AI an der Berner Fachhochschule, Bern",
   },
 ];
 

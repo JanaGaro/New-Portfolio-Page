@@ -76,62 +76,59 @@
             <li class="nav-item">
               <a class="nav-link" href="#more">More</a>
             </li>
-            <!-- Toggle Switch for Dark Mode -->
+            <!-- Toggle Switch for Dark Mode 
             <li class="nav-item align-self-center">
               <label class="switch">
                 <input type="checkbox" id="mode-toggle" />
                 <span class="slider round"></span>
               </label>
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>
     </nav>
     <script src="js/darkmode.js"></script>
 
-    <!-- ABOUT ME  -->
-    <section class="pt-5 pb-0" id="about">
-      <div class="row justify-content-evenly align-middle">
-      <!-- here data-aos is used for adding aos animation  -->
-      <div
-        class="col-10 col-md-6 text-center text-md-start"
-        data-aos="slide-right"
-      >
-        <h1>Hallo! Ich bin</h1>
-        <h2>JANA GARO</h2>
-        <p class="text-muted">
+<!-- ABOUT ME  -->
+<section class="pt-5 pb-0" id="about">
+  <div class="row justify-content-evenly">
+    <div
+      class="col-10 col-md-6 text-center text-md-start"
+      data-aos="slide-right"
+    >
+      <h1>Hallo! Ich bin</h1>
+      <h2>JANA GARO</h2>
+      <p class="text-muted">
         Ich verbinde Struktur mit Kreativität, Strategie mit Design und
         Technik mit Menschen. Als Wirtschaftsinformatikerin interessiere ich
         mich für die Schnittstelle von digitalen Systemen, Prozessen und
         Gestaltung. Ich analysiere, strukturiere und entwickle Lösungen, die
         komplexe Zusammenhänge verständlich und nutzbar machen.
-        </p>
+      </p>
 
-        <!-- Button: Random Facts über mich  -->
-        <button
+      <button
         class="c-btn h-btn mt-4 py-3 px-5 rounded-pill"
         id="random-fact-btn"
-        >
+      >
         Random Facts about me
-        </button>
-        <p
+      </button>
+      <p
         id="random-fact"
         class="mt-3 text-muted"
         style="font-style: italic"
-        ></p>
+      ></p>
 
-        <!-- Button: Cornify "Add some Magic"  -->
-        <button
+      <button
         class="c-btn h-btn mt-4 mb-5 py-3 px-5 rounded-pill"
         onclick="
           cornify_add();
           return false;
         "
-        >
+      >
         Add some Magic 🦄
-        </button>
+      </button>
 
-        <script>
+      <script>
         const facts = [
           "Ich liebe Pflanzen, aber weil ich keinen Grünen Daumen habe, muss ich regelmässig welche ersetzen.",
           "Ich bin ein bisschen ein Monk – Ordnung und Struktur machen mich glücklich.",
@@ -159,24 +156,27 @@
         document
           .getElementById("random-fact-btn")
           .addEventListener("click", function () {
-          const randomIndex = Math.floor(Math.random() * facts.length);
-          document.getElementById("random-fact").textContent =
-            facts[randomIndex];
+            const randomIndex = Math.floor(Math.random() * facts.length);
+            document.getElementById("random-fact").textContent =
+              facts[randomIndex];
           });
-        </script>
+      </script>
 
-        <script
+      <script
         type="text/javascript"
         src="https://www.cornify.com/js/cornify.js"
-        ></script>
-      </div>
+      ></script>
+    </div>
 
-      <!-- Bewerbungsfoto Section -->
-      <div class="col-10 col-md-5 d-md-block align-self-end" data-aos="slide-left">
-        <img src="Bilder/Business Foto.png" class="img-fluid d-block" alt="Business Foto" />
-      </div>
-        </div>
-        </section>
+    <div class="col-10 col-md-5 d-md-block align-self-end" data-aos="slide-left">
+      <img
+        src="Bilder/Business Foto.png"
+        class="about-photo img-fluid d-block"
+        alt="Business Foto"
+      />
+    </div>
+  </div>
+</section>
 
     <!-- PERSONAL INFORMATION & CONTACT -->
     <section class="contact py-5" id="contact">
@@ -278,7 +278,7 @@
     <!-- ADDITIONAL SKILLS SECTION -->
     <section class="skill py-5" id="skills">
       <div class="heading text-center">
-      <h3>Skills</h3>
+      <h2>Skills</h2>
       </div>
       <div class="row justify-content-evenly mt-5">
       <!-- Digitale & Technische Kenntnisse -->

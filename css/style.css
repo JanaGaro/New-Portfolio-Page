@@ -23,6 +23,7 @@ html {
 body {
   font-family: "Inter", sans-serif;
 }
+
 /* styling menu icon */
 .nav-menu {
   border: none;
@@ -85,14 +86,13 @@ input:checked + .slider:before {
 
 /* styling about section starts */
 #about {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
 }
 
 #about .row {
-  margin-top: 50px;
+  margin-top: 0;
   margin-bottom: 0;
+  align-items: end;
 }
 
 #about h1 {
@@ -115,6 +115,11 @@ input:checked + .slider:before {
   margin-bottom: 50px;
 }
 
+#about .about-photo {
+  width: 100%;
+  max-width: 750px;
+}
+
 /* adding animation to home section image  */
 .img-fluid {
   animation: floatimg 4s ease-in-out infinite;
@@ -130,12 +135,6 @@ input:checked + .slider:before {
   100% {
     transform: translateX(0);
   }
-}
-
-#about .img-fluid {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 0; /* Vermeidet zusätzlichen Abstand direkt unter dem Bild */
 }
 
 /* styling personalinfo section starts */
@@ -161,6 +160,13 @@ input:checked + .slider:before {
 #skills {
   background-color: #36363d;
   border: 0;
+}
+
+#skills h2 {
+  font-size: 2rem;
+  color: #b2a993;
+  font-weight: 500;
+  margin-bottom: 20px;
 }
 
 .skill h3 {
