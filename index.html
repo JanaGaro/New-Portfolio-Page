@@ -42,49 +42,42 @@
       style="background-color: #36363d"
     >
       <div class="container-fluid px-5">
-        <a class="navbar-brand fw-bold fs-2" href="#" style="color: #b2a993">
-          Mein Portfolio
-        </a>
-        <button
-          class="nav-menu d-md-none"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <i class="bi bi-menu-button-fill"></i>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav gap-4 ms-auto" style="font-size: 1.1rem">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#about">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#career">Career</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#education">Education</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#more">More</a>
-            </li>
-            <!-- Toggle Switch for Dark Mode 
-            <li class="nav-item align-self-center">
-              <label class="switch">
-                <input type="checkbox" id="mode-toggle" />
-                <span class="slider round"></span>
-              </label>
-            </li> -->
-          </ul>
-        </div>
+      <a class="navbar-brand fw-bold fs-2" href="#" style="color: #b2a993">
+        Mein Portfolio
+      </a>
+      <button
+        class="nav-menu d-md-none"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        <i class="bi bi-menu-button-fill"></i>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navbarNav"
+      >
+        <ul class="navbar-nav gap-4 ms-auto" style="font-size: 1.1rem">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#about">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#career">Career</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#education">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        </ul>
+      </div>
       </div>
     </nav>
     <script src="js/darkmode.js"></script>
@@ -545,7 +538,7 @@
           Entwickelt im Rahmen einer Studienarbeit als Grundlage für eine mögliche Umsetzung.
         </p>
         <div class="mt-auto">
-          <button class="c-btn h-btn py-2 px-4 rounded-pill w-100" onclick="openProjectModal('socialmedia1')">
+          <button class="c-btn h-btn py-2 px-4 rounded-pill w-100" onclick="window.open('Content Strategie & Design Konzept.pdf', '_blank')">
             View Details
           </button>
         </div>
@@ -765,20 +758,6 @@
     <!-- Einbindung der geolocationWeather.js -->
     <script src="js/geolocationWeather.js"></script>
 
-    <!-- Spotify Playlist basierend auf Standort
-     Dieser Abschnitt wird nicht angezeigt, da dieser noch keine genaueren Informationen liefert
-    <section id="spotify-section" class="py-5">
-      <div class="container">
-        <h2 class="text-center mb-4">Lokale Spotify Playlist</h2>
-        <div id="spotify-playlist" class="text-center text-muted">
-          Playlist wird geladen...
-        </div>
-      </div>
-    </section>
-
-    Einbindung der geolocationSpotify.js 
-    <script src="js/geolocationSpotify.js"></script> -->
-
     <!-- back to top button -->
     <button
       type="button"
@@ -792,40 +771,40 @@
     <footer class="text-center text-muted py-4">
       <h3 class="text-white pt-4" data-aos="fade-up">Portfolio</h3>
       <div class="link-group mt-5" data-aos="fade-up">
-        <a href="#about">Home</a>
-        <div class="vr"></div>
-        <a href="#contact">About me</a>
-        <div class="vr"></div>
-        <a href="#career">Career</a>
-        <div class="vr"></div>
-        <a href="#education">Education</a>
-        <div class="vr"></div>
-        <a href="#projects">Projects</a>
-        <div class="vr"></div>
-        <a href="#more">More</a>
+      <a href="#about">Home</a>
+      <div class="vr"></div>
+      <a href="#contact">About me</a>
+      <div class="vr"></div>
+      <a href="#career">Career</a>
+      <div class="vr"></div>
+      <a href="#education">Education</a>
+      <div class="vr"></div>
+      <a href="#skills">Skills</a>
+      <div class="vr"></div>
+      <a href="#projects">Projects</a>
       </div>
       <div class="social-links mt-5" data-aos="fade-up">
-        <button class="rounded-pill linkedin">
-          <a
-            href="https://www.linkedin.com/in/janagaro/"
-            target="_blank"
-            rel="noopener noreferrer"
-            style="text-decoration: none; color: inherit"
-          >
-            <i class="bi bi-linkedin"></i>
-          </a>
-        </button>
+      <button class="rounded-pill linkedin">
+        <a
+        href="https://www.linkedin.com/in/janagaro/"
+        target="_blank"
+        rel="noopener noreferrer"
+        style="text-decoration: none; color: inherit"
+        >
+        <i class="bi bi-linkedin"></i>
+        </a>
+      </button>
 
-        <button class="rounded-pill github">
-          <a
-            href="https://github.com/JanaGaro?tab=repositories"
-            target="_blank"
-            rel="noopener noreferrer"
-            style="text-decoration: none; color: inherit"
-          >
-            <i class="bi bi-github"></i>
-          </a>
-        </button>
+      <button class="rounded-pill github">
+        <a
+        href="https://github.com/JanaGaro?tab=repositories"
+        target="_blank"
+        rel="noopener noreferrer"
+        style="text-decoration: none; color: inherit"
+        >
+        <i class="bi bi-github"></i>
+        </a>
+      </button>
       </div>
       <hr class="text-muted my-4" />
 
