@@ -171,6 +171,10 @@ input:checked + .slider:before {
   margin-bottom: 30px;
 }
 
+#skills span {
+  color: #fff;
+}
+
 /* Progress Card Styling */
 .progress-card {
   display: flex;
@@ -275,6 +279,12 @@ input:checked + .slider:before {
   font-size: 1.2rem;
   color: #fff;
 }
+
+.contact ul {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
 .contact-details i {
   font-size: 1.5rem;
   color: #b2a993;
@@ -348,6 +358,20 @@ input:checked + .slider:before {
   height: 320px;
   object-fit: contain;
   display: block;
+}
+
+#branding h2 {
+  font-size: 2rem;
+  color: #b2a993;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+#branding h3 {
+  font-size: 1.3rem;
+  min-height: 60px;
+  display: flex;
+  align-items: flex-start;
 }
 
 /* Lokale Nachrichten Sektion */
