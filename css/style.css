@@ -523,6 +523,38 @@ footer .link-group a:hover {
   animation: pulse 3s infinite;
 }
 
+/* GLOBAL HOVER TOOLTIP */
+
+.global-hover-box {
+  position: fixed;
+  background-color: #36363d;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 12px;
+  width: 320px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  font-size: 0.95rem;
+  line-height: 1.4;
+  z-index: 999999;
+  pointer-events: none;
+  opacity: 0;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+/* kleiner smooth Effekt */
+.global-hover-box.show {
+  opacity: 1;
+}
+
+/* optional schöner Text */
+.global-hover-box strong {
+  color: #b2a993;
+  display: block;
+  margin-bottom: 6px;
+}
+
 /* Dark Mode Styles */
 body.dark-mode {
   background-color: #36363d;
