@@ -248,7 +248,7 @@ input:checked + .slider:before {
   margin-bottom: 50px;
 }
 
-#career h3 {
+#career h2 {
   color: #b2a993;
   font-size: 40px;
   font-weight: semi-bold;
@@ -259,7 +259,7 @@ input:checked + .slider:before {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.education h3 {
+#education h2 {
   color: #b2a993;
   font-size: 40px;
   font-weight: semi-bold;

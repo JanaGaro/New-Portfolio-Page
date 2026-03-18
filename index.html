@@ -90,93 +90,93 @@
     <script src="js/darkmode.js"></script>
 
     <!-- ABOUT ME  -->
-    <section class="pt-5" id="about">
+    <section class="pt-5 pb-0" id="about">
       <div class="row justify-content-evenly align-middle">
-        <!-- here data-aos is used for adding aos animation  -->
-        <div
-          class="col-10 col-md-6 text-center text-md-start"
-          data-aos="slide-right"
+      <!-- here data-aos is used for adding aos animation  -->
+      <div
+        class="col-10 col-md-6 text-center text-md-start"
+        data-aos="slide-right"
+      >
+        <h1>Hallo! Ich bin</h1>
+        <h2>JANA GARO</h2>
+        <p class="text-muted">
+        Ich verbinde Struktur mit Kreativität, Strategie mit Design und
+        Technik mit Menschen. Als Wirtschaftsinformatikerin interessiere ich
+        mich für die Schnittstelle von digitalen Systemen, Prozessen und
+        Gestaltung. Ich analysiere, strukturiere und entwickle Lösungen, die
+        komplexe Zusammenhänge verständlich und nutzbar machen.
+        </p>
+
+        <!-- Button: Random Facts über mich  -->
+        <button
+        class="c-btn h-btn mt-4 py-3 px-5 rounded-pill"
+        id="random-fact-btn"
         >
-          <h1>Hallo! Ich bin</h1>
-          <h2>JANA GARO</h2>
-          <p class="text-muted">
-            Ich verbinde Struktur mit Kreativität, Strategie mit Design und
-            Technik mit Menschen. Als Wirtschaftsinformatikerin interessiere ich
-            mich für die Schnittstelle von digitalen Systemen, Prozessen und
-            Gestaltung. Ich analysiere, strukturiere und entwickle Lösungen, die
-            komplexe Zusammenhänge verständlich und nutzbar machen.
-          </p>
+        Random Facts about me
+        </button>
+        <p
+        id="random-fact"
+        class="mt-3 text-muted"
+        style="font-style: italic"
+        ></p>
 
-          <!-- Button: Random Facts über mich  -->
-          <button
-            class="c-btn h-btn mt-4 py-3 px-5 rounded-pill"
-            id="random-fact-btn"
-          >
-            Random Facts about me
-          </button>
-          <p
-            id="random-fact"
-            class="mt-3 text-muted"
-            style="font-style: italic"
-          ></p>
+        <!-- Button: Cornify "Add some Magic"  -->
+        <button
+        class="c-btn h-btn mt-4 mb-5 py-3 px-5 rounded-pill"
+        onclick="
+          cornify_add();
+          return false;
+        "
+        >
+        Add some Magic 🦄
+        </button>
 
-          <!-- Button: Cornify "Add some Magic"  -->
-          <button
-            class="c-btn h-btn mt-4 py-3 px-5 rounded-pill"
-            onclick="
-              cornify_add();
-              return false;
-            "
-          >
-            Add some Magic 🦄
-          </button>
+        <script>
+        const facts = [
+          "Ich liebe Pflanzen, aber weil ich keinen Grünen Daumen habe, muss ich regelmässig welche ersetzen.",
+          "Ich bin ein bisschen ein Monk – Ordnung und Struktur machen mich glücklich.",
+          "Ich hatte einmal ein Meerschweinchen namens Tweety.",
+          "Ich kann mich stundenlang mit Layouts, Farben und Designideen beschäftigen.",
+          "Ich Reise gerne und liebe es neue Orte zu entdecken.",
+          "Ich mag minimalistisches Design, auch wenn mein Kopf manchmal alles andere als minimalistisch ist.",
+          "Gute Ideen kommen mir oft unter der Dusche oder beim Spazieren.",
+          "Mein Kopf ist oft eine Mischung aus Strategie, Kreativität und Chaos.",
+          "Ich liebe es, komplexe Dinge zu strukturieren und verständlich zu machen.",
+          "Ich bewege mich gerne zwischen Technologie, Design und Strategie.",
+          "Wenn ich ein System sehe, überlege ich automatisch: Wie könnte man das optimieren?",
+          "Matcha gehört zu meinem Alltag.",
+          "Ich bin ein kleines Konsumopfer.",
+          "Wenn ich ins IKEA einkauden gehe komme ich immer mit einer Duftkerze oder Pflanze raus, auch wenn ich gar nichts gebraucht hätte.",
+          "Ich könnte problemlos jeden Tag eine Packung Chips essen.",
+          "Ich liebe es neue Foodspots zu entdecken.",
+          "Ein Aperol Spritz ist für mich der perfekte Start in einen Sommerabend.",
+          "Wäsche zusammenlegen gehört definitiv nicht zu meinen Lieblingsaufgaben.",
+          "Ich liebe es, Mottopartys zu organisieren - dazu gehört ein Mal im Jahr unser Kürbisschnitzen",
+          "Ich liebe Science-Fiction",
+          "Unnötiges Allgemeinwissen bereichert mein Leben mehr, als es eigentlich sollte.",
+        ];
 
-          <script>
-            const facts = [
-              "Ich liebe Pflanzen, aber weil ich keinen Grünen Daumen habe, muss ich regelmässig welche ersetzen.",
-              "Ich bin ein bisschen ein Monk – Ordnung und Struktur machen mich glücklich.",
-              "Ich hatte einmal ein Meerschweinchen namens Tweety.",
-              "Ich kann mich stundenlang mit Layouts, Farben und Designideen beschäftigen.",
-              "Ich Reise gerne und liebe es neue Orte zu entdecken.",
-              "Ich mag minimalistisches Design, auch wenn mein Kopf manchmal alles andere als minimalistisch ist.",
-              "Gute Ideen kommen mir oft unter der Dusche oder beim Spazieren.",
-              "Mein Kopf ist oft eine Mischung aus Strategie, Kreativität und Chaos.",
-              "Ich liebe es, komplexe Dinge zu strukturieren und verständlich zu machen.",
-              "Ich bewege mich gerne zwischen Technologie, Design und Strategie.",
-              "Wenn ich ein System sehe, überlege ich automatisch: Wie könnte man das optimieren?",
-              "Matcha gehört zu meinem Alltag.",
-              "Ich bin ein kleines Konsumopfer.",
-              "Wenn ich ins IKEA einkauden gehe komme ich immer mit einer Duftkerze oder Pflanze raus, auch wenn ich gar nichts gebraucht hätte.",
-              "Ich könnte problemlos jeden Tag eine Packung Chips essen.",
-              "Ich liebe es neue Foodspots zu entdecken.",
-              "Ein Aperol Spritz ist für mich der perfekte Start in einen Sommerabend.",
-              "Wäsche zusammenlegen gehört definitiv nicht zu meinen Lieblingsaufgaben.",
-              "Ich liebe es, Mottopartys zu organisieren - dazu gehört ein Mal im Jahr unser Kürbisschnitzen",
-              "Ich liebe Science-Fiction",
-              "Unnötiges Allgemeinwissen bereichert mein Leben mehr, als es eigentlich sollte.",
-            ];
+        document
+          .getElementById("random-fact-btn")
+          .addEventListener("click", function () {
+          const randomIndex = Math.floor(Math.random() * facts.length);
+          document.getElementById("random-fact").textContent =
+            facts[randomIndex];
+          });
+        </script>
 
-            document
-              .getElementById("random-fact-btn")
-              .addEventListener("click", function () {
-                const randomIndex = Math.floor(Math.random() * facts.length);
-                document.getElementById("random-fact").textContent =
-                  facts[randomIndex];
-              });
-          </script>
-
-          <script
-            type="text/javascript"
-            src="https://www.cornify.com/js/cornify.js"
-          ></script>
-        </div>
-
-        <!-- Bewerbungsfoto Section -->
-        <div class="col-10 col-md-4 d-md-block">
-          <img src="Bilder/bewerbungsfoto.jpg" class="img-fluid" alt="" />
-        </div>
+        <script
+        type="text/javascript"
+        src="https://www.cornify.com/js/cornify.js"
+        ></script>
       </div>
-    </section>
+
+      <!-- Bewerbungsfoto Section -->
+      <div class="col-10 col-md-5 d-md-block align-self-end" data-aos="slide-left">
+        <img src="Bilder/Business Foto.png" class="img-fluid d-block" alt="Business Foto" />
+      </div>
+        </div>
+        </section>
 
     <!-- PERSONAL INFORMATION & CONTACT -->
     <section class="contact py-5" id="contact">
@@ -187,53 +187,31 @@
       <div>
       <h3 class="mb-3">Persönliche Informationen</h3>
       <p class="mb-1">
-        <span>Geburtsdatum:</span> 29.12.2001
+      <span>Geburtsdatum:</span> 29.12.2001
       </p>
       <p class="mb-1">
-        <span>Heimatort:</span> Tschugg BE
+      <span>Heimatort:</span> Tschugg BE
       </p>
       <p class="mb-1">
-        <span>Nationalität:</span> Schweiz
+      <span>Nationalität:</span> Schweiz
       </p>
       <p class="mb-1">
-        <span>Familienstand:</span> Ledig
+      <span>Familienstand:</span> Ledig
       </p>
       <p class="mb-1">
-        <span>Führerschein:</span> Kategorie B
+      <span>Führerschein:</span> Kategorie B
       </p>
 
       <h3 class="mb-3 mt-4">Fremdsprachen</h3>
       <p class="mb-1">
-        <span>Deutsch:</span> Muttersprache
+      <span>Deutsch:</span> Muttersprache
       </p>
       <p class="mb-1">
-        <span>Englisch:</span> Niveau B2 (zertifiziert)
+      <span>Englisch:</span> Niveau B2 (zertifiziert)
       </p>
       <p class="mb-1">
-        <span>Französisch:</span> Niveau B1 (zertifiziert)
+      <span>Französisch:</span> Niveau B1 (zertifiziert)
       </p>
-
-      <h3 class="mb-3 mt-4">Hobbys</h3>
-       <p class="mb-1">
-         <i class="bi bi-suit-heart-fill" style="color: #b2a993; font-size: 1.3em;"></i>
-         <span> Kochen</span>
-       </p>
-       <p class="mb-1">
-         <i class="bi bi-map" style="color: #b2a993; font-size: 1.3em;"></i>
-         <span> Reisen</span>
-       </p>
-       <p class="mb-1">
-         <i class="bi bi-palette" style="color: #b2a993; font-size: 1.3em;"></i>
-         <span> Interior Design</span>
-       </p>
-       <p class="mb-1">
-         <i class="bi bi-code-slash" style="color: #b2a993; font-size: 1.3em;"></i>
-         <span> Digital Projects</span>
-       </p>
-       <p class="mb-1">
-         <i class="bi bi-lightning-fill" style="color: #b2a993; font-size: 1.3em;"></i>
-         <span> Kickboxen & Pilates</span>
-       </p>
       </div>
       </div>
 
@@ -242,59 +220,51 @@
       <div>
       <h3 class="mb-3">Zertifikate</h3>
       <ul class="list-unstyled mb-4">
-        <li>ECDL Base Certificate</li>
-        <li>ECDL Standard Certificate</li>
-        <li>ECDL Advanced Presentation</li>
-        <li>ECDL Advanced Word</li>
-        <li>Certificate Intermediate (CEFR B1)</li>
-        <li>Certificate de Stage Le Landeron</li>
+      <li>ECDL Base Certificate</li>
+      <li>ECDL Standard Certificate</li>
+      <li>ECDL Advanced Presentation</li>
+      <li>ECDL Advanced Word</li>
+      <li>Certificate Intermediate (CEFR B1)</li>
+      <li>Certificate de Stage Le Landeron</li>
       </ul>
 
       <h3 class="mb-3">Kontakte</h3>
       <div class="d-flex align-items-center mb-1">
-        <i class="bi bi-geo-alt-fill me-2" style="color: #b2a993; font-size: 1.3em;"></i>
-        <p class="mb-0">
-        <a
-          href="https://www.google.com/maps/search/?api=1&query=Gärbi+2a,+3257+Grossaffoltern"
-          target="_blank"
-          style="text-decoration: none; color: inherit"
-        >
-          Gärbi 2a, 3257 Grossaffoltern
-        </a>
-        </p>
+      <i class="bi bi-geo-alt-fill me-2" style="color: #b2a993; font-size: 1.3em;"></i>
+      <p class="mb-0">
+      <a
+        href="https://www.google.com/maps/search/?api=1&query=Gärbi+2a,+3257+Grossaffoltern"
+        target="_blank"
+        style="text-decoration: none; color: inherit"
+      >
+        Gärbi 2a, 3257 Grossaffoltern
+      </a>
+      </p>
       </div>
 
       <div class="d-flex align-items-center mb-1">
-        <i class="bi bi-telephone-fill me-2" style="color: #b2a993; font-size: 1.3em;"></i>
-        <p class="mb-0">+41 79 955 89 01</p>
+      <i class="bi bi-telephone-fill me-2" style="color: #b2a993; font-size: 1.3em;"></i>
+      <p class="mb-0">+41 79 955 89 01</p>
       </div>
 
       <div class="d-flex align-items-center mb-1">
-        <i class="bi bi-send-fill me-2" style="color: #b2a993; font-size: 1.3em;"></i>
-        <p class="mb-0">
-        <a
-          href="mailto:janamara.garo@gmail.com"
-          style="text-decoration: none; color: inherit"
-        >
-          janamara.garo@gmail.com
-        </a>
-        </p>
+      <i class="bi bi-send-fill me-2" style="color: #b2a993; font-size: 1.3em;"></i>
+      <p class="mb-0">
+      <a
+        href="mailto:janamara.garo@gmail.com"
+        style="text-decoration: none; color: inherit"
+      >
+        janamara.garo@gmail.com
+      </a>
+      </p>
       </div>
-
-        <!-- Download Button -->
-        <button class="c-btn h-btn mt-4 py-3 px-5 rounded-pill">
-          <a
-          href="Lebenslauf.pdf"
-          download="SampleCV"
-          style="text-decoration: none; color: #fff"
-          >Download CV</a
-          >
-        </button>
-        </div>
+      </div>
       </div>
       </div>
     </section>
 
+
+    <!-- Timeline Section -->
     <section id="career" class="py-5 text-center">
       <h2 class="mb-5">Career</h2>
       <div id="career-timeline"></div>
@@ -304,100 +274,6 @@
       <h2 class="mb-5">Education</h2>
       <div id="education-timeline"></div>
     </section>
-
-    <!-- Career Timeline
-    <section class="career" id="career">
-      <div class="heading text-center pt-5">
-        <img src="Bilder/Timeline Icon Beruf.PNG" alt="Timeline Icon Beruf" />
-        <h3>Career</h3>
-      </div>
-
-      <div class="portfolio-body">
-        <div id="career-timeline"></div>
-      </div>
-    </section>
-
-    Education Timeline
-    <section class="education" id="education">
-      <div class="heading text-center pt-5">
-        <img
-          src="Bilder/Timeline Icon Ausbildung.PNG"
-          alt="Timeline Icon Beruf"
-        />
-        <h3>Education</h3>
-      </div>
-
-      <div class="portfolio-body">
-        <div id="education-timeline"></div>
-      </div>
-    </section>
-  -->
-
-    <!-- SKILLS 
-    <section class="skill py-5" id="skills">
-      <div class="row justify-content-evenly">
-        <div class="col-10 col-md-5 skill-with-progress" data-aos="slide-right">
-          <div class="row justify-content-evenly">
-            <div class="col-10 col-md-6">
-              <div class="progress-card ms-3 ms-md-0">
-                <div class="circular-progress html-css">
-                  <span class="progress-value html-progress">0%</span>
-                </div>
-                <br />
-                <span class="text">HTML & CSS</span>
-              </div>
-            </div>
-            <div class="col-10 col-md-6 mt-4 mt-md-0">
-              <div class="progress-card ms-3 ms-md-0">
-                <div class="circular-progress javascript">
-                  <span class="progress-value javascript-progress">0%</span>
-                </div>
-                <br />
-                <span class="text">JavaScript</span>
-              </div>
-            </div>
-          </div>
-          <div class="row justify-content-evenly mt-4">
-            <div class="col-10 col-md-6">
-              <div class="progress-card ms-3 ms-md-0">
-                <div class="circular-progress python">
-                  <span class="progress-value python-progress">0%</span>
-                </div>
-                <br />
-                <span class="text">Python</span>
-              </div>
-            </div>
-            <div class="col-10 col-md-6 mt-4 mt-md-0">
-              <div class="progress-card ms-3 ms-md-0">
-                <div class="circular-progress rsql">
-                  <span class="progress-value rsql-progress">0%</span>
-                </div>
-                <br />
-                <span class="text">R & SQL</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
-          <div class="heading mt-5 mt-md-3">
-            <h3>My Skills</h3>
-            <p class="text-muted">
-              Als angehende Wirtschaftsinformatikerin mit einem starken
-              Hintergrund in Verwaltungs- und IT-Aufgaben bringe ich
-              umfangreiche Kenntnisse in digitalen Verwaltungsprozessen mit.
-              Meine Erfahrung umfasst die Unterstützung bei IT-Projekten, wie
-              der Umstellung auf Business Applikationen, sowie die Betreuung von
-              Kundenanliegen. Erste Kenntnisse in HTML, JavaScript, CSS sowie
-              Python und R habe ich im Rahmen meines Studiums erworben und baue
-              sie weiter aus. Mit fundierter Erfahrung in Microsoft Office und
-              Abacus sowie zertifizierter IT-Expertise (ECDL) und
-              Sprachkenntnissen in Deutsch, Englisch und Französisch bin ich
-              bestens aufgestellt, um administrative und IT-technische
-              Herausforderungen zu meistern und digitale Transformationen aktiv
-              mitzugestalten.
-            </p> -->
-
-
 
     <!-- ADDITIONAL SKILLS SECTION -->
     <section class="skill py-5" id="skills">
@@ -434,10 +310,6 @@
           <span> R</span>
         </p>
         <p class="mb-1">
-          <i class="bi bi-graph-up" style="color: #b2a993;"></i>
-          <span> Datenanalyse & Datenmanagement</span>
-        </p>
-        <p class="mb-1">
           <i class="bi bi-robot" style="color: #b2a993;"></i>
           <span> KI</span>
         </p>
@@ -461,16 +333,8 @@
           <span> Adobe Tools</span>
         </p>
         <p class="mb-1">
-          <i class="bi bi-diagram-3" style="color: #b2a993;"></i>
-          <span> Microsoft 365</span>
-        </p>
-        <p class="mb-1">
           <i class="bi bi-calculator" style="color: #b2a993;"></i>
           <span> Abacus</span>
-        </p>
-        <p class="mb-1">
-          <i class="bi bi-calculator" style="color: #b2a993;"></i>
-          <span> Volta</span>
         </p>
         <p class="mb-1">
           <i class="bi bi-gear" style="color: #b2a993;"></i>
@@ -515,11 +379,7 @@
         </p>
         <p class="mb-1">
           <i class="bi bi-pencil-square" style="color: #b2a993;"></i>
-          <span> Content Strategie</span>
-        </p>
-        <p class="mb-1">
-          <i class="bi bi-tag" style="color: #b2a993;"></i>
-          <span> Branding</span>
+          <span> Content Strategie & Branding</span>
         </p>
         <p class="mb-1">
           <i class="bi bi-kanban" style="color: #b2a993;"></i>
@@ -561,70 +421,10 @@
       </div>
     </section>
 
-
-    <!-- Contact Form
-        <div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
-          <div class="contact-form">
-            <form
-              action="mailto:janamara.garo@gmail.com"
-              method="POST"
-              enctype="text/plain"
-            >
-              <div class="mb-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="exampleFormControlInput1"
-                  name="name"
-                  placeholder="Name"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleFormControlInput2"
-                  name="email"
-                  placeholder="E-mail"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="exampleFormControlInput3"
-                  name="phone"
-                  placeholder="Mobile No."
-                />
-              </div>
-              <div class="mb-3">
-                <textarea
-                  class="form-control"
-                  id="exampleFormControlTextarea4"
-                  name="message"
-                  placeholder="Message"
-                  rows="5"
-                  required
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                class="c-btn h-btn mt-3 py-3 px-5 rounded-pill"
-              >
-                Submit
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>  -->
-
 <!-- PROJECTS -->
 <section class="projects py-5" id="projects">
   <div class="heading text-center">
-    <h2>Figma Projects</h2>
+    <h2>Some Figma Projects</h2>
   </div>
 
   <div class="row justify-content-evenly align-items-stretch mt-5">
@@ -643,12 +443,9 @@
         Volunthero ist ein Plattformkonzept, das Menschen mit freiwilligen Projekten verbindet 
         und Organisationen dabei unterstützt, schnell passende Helfer zu finden.
       </p>
-      <div class="d-flex gap-2 mt-auto">
-        <button class="c-btn h-btn py-2 px-4 rounded-pill flex-grow-1" onclick="openProjectModal('volunthero')">
-        View Details
-        </button>
-        <button class="c-btn h-btn py-2 px-4 rounded-pill">
-        <a href="https://www.figma.com/proto/rAT6CHbvN8RcNTEgu0Mm9O/Volunthero?page-id=0%3A1&node-id=97-2733&p=f&viewport=432%2C116%2C0.17&t=ZR3QYdlRFAQ0G52i-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=130%3A2569&show-proto-sidebar=1" target="_blank" style="text-decoration: none; color: #fff;">Figma</a>
+      <div class="mt-auto">
+        <button class="c-btn h-btn py-2 px-4 rounded-pill w-100">
+        <a href="https://www.figma.com/proto/rAT6CHbvN8RcNTEgu0Mm9O/Volunthero?page-id=0%3A1&node-id=97-2733&p=f&viewport=432%2C116%2C0.17&t=ZR3QYdlRFAQ0G52i-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=130%3A2569&show-proto-sidebar=1" target="_blank" style="text-decoration: none; color: #fff;">View Figma</a>
         </button>
       </div>
       </div>
@@ -669,12 +466,9 @@
         NestFinder ist ein App-Konzept, das Menschen dabei unterstützt, den idealen Wohnort basierend 
         auf Lebensqualitätsfaktoren wie Infrastruktur, Umwelt und Mobilität zu finden.
       </p>
-      <div class="d-flex gap-2 mt-auto">
-        <button class="c-btn h-btn py-2 px-4 rounded-pill flex-grow-1" onclick="openProjectModal('nestfinder')">
-        View Details
-        </button>
-        <button class="c-btn h-btn py-2 px-4 rounded-pill">
-        <a href="https://www.figma.com/proto/p7r1Z3tsApjlqeQOKSYIyR/NestFinder?page-id=0%3A1&node-id=764-2483&starting-point-node-id=764%3A2483&show-proto-sidebar=1&t=9cuZsF1EUlFGPRAA-1" target="_blank" style="text-decoration: none; color: #fff;">Figma</a>
+      <div class="mt-auto">
+        <button class="c-btn h-btn py-2 px-4 rounded-pill w-100">
+        <a href="https://www.figma.com/proto/p7r1Z3tsApjlqeQOKSYIyR/NestFinder?page-id=0%3A1&node-id=764-2483&starting-point-node-id=764%3A2483&show-proto-sidebar=1&t=9cuZsF1EUlFGPRAA-1" target="_blank" style="text-decoration: none; color: #fff;">View Figma</a>
         </button>
       </div>
       </div>
@@ -695,12 +489,9 @@
         Biodiversity Days Bern ist ein Website-Konzept, das Veranstaltungen und Informationen 
         rund um Biodiversität, Natur und Nachhaltigkeit verständlich und ansprechend präsentiert.
       </p>
-      <div class="d-flex gap-2 mt-auto">
-        <button class="c-btn h-btn py-2 px-4 rounded-pill flex-grow-1" onclick="openProjectModal('bernee')">
-        View Details
-        </button>
-        <button class="c-btn h-btn py-2 px-4 rounded-pill">
-        <a href="https://www.figma.com/proto/SoQHm5nRskPTgP8bXIG01u/Biodiversity-Days-Bern?page-id=0%3A1&node-id=89-2&starting-point-node-id=89%3A2&t=bKO4dVy6FuzMqCpl-1" target="_blank" style="text-decoration: none; color: #fff;">Figma</a>
+      <div class="mt-auto">
+        <button class="c-btn h-btn py-2 px-4 rounded-pill w-100">
+        <a href="https://www.figma.com/proto/SoQHm5nRskPTgP8bXIG01u/Biodiversity-Days-Bern?page-id=0%3A1&node-id=89-2&starting-point-node-id=89%3A2&t=bKO4dVy6FuzMqCpl-1" target="_blank" style="text-decoration: none; color: #fff;">View Figma</a>
         </button>
       </div>
       </div>
@@ -711,7 +502,7 @@
 <!-- BRANDING & SOCIAL MEDIA PROJECTS -->
 <section class="projects py-5" id="branding">
   <div class="heading text-center">
-    <h2>Branding & Social Media Projects</h2>
+    <h2>Some Branding & Social Media Projects</h2>
   </div>
 
   <div class="row justify-content-evenly align-items-stretch mt-5">
